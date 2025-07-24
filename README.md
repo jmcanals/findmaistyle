@@ -79,7 +79,7 @@ Si quieres contribuir o adaptarlo a otros formatos (YouTube Shorts, TikTok, news
 ## 👨‍💻 Autor
 
 **Juanma Canals**  
-📧 canals.juanma@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/juanmacanals)
+📧 jmcanals98@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/juan-manuel-canals/)
 
 ---
