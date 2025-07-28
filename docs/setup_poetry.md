@@ -107,3 +107,108 @@ Y ejecuta:
 poetry install
 ```
 para dejar todo listo.
+
+
+# ✅ Validación configuración Poetry
+
+Antes de empezar a trabajar, valida que todas las dependencias y el entorno virtual estén correctamente instalados y configurados.
+
+---
+
+## 1. Activa el entorno virtual
+
+Desde la raíz del proyecto, ejecuta:
+
+```bash
+source $(poetry env info --path)/bin/activate
+```
+
+O bien, si usas Poetry 2.x y tienes el comando disponible:
+
+```bash
+poetry shell
+```
+
+El prompt de tu terminal debería cambiar, mostrando algo como `(findmaistyle-py3.12)` al inicio de la línea.
+
+---
+
+## 2. Ejecuta el script de validación
+
+Puedes usar el script `validate_env.py`:
+
+```bash
+python validate_env.py
+```
+
+Si ves las versiones de todos los paquetes y ningún error, el entorno está correctamente configurado.\
+Un ejemplo de salida correcta sería:
+
+```
+spacy importado correctamente. Versión: 3.8.7
+pandas importado correctamente. Versión: 2.3.1
+transformers importado correctamente. Versión: 4.54.0
+streamlit importado correctamente. Versión: 1.47.1
+whisper importado correctamente. Versión: 20250625
+
+Validación finalizada. Si no hay errores, el entorno está listo.
+```
+
+---
+
+## 3. (Opcional) Valida en Jupyter Notebook
+
+Lanza Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Abre el notebook `validate_env.ipynb` y ejecuta la celda de validación.\
+Verifica que no aparecen errores y que todos los paquetes funcionan correctamente.
+
+---
+
+## 4. Solución de problemas frecuentes
+
+- **Si algún paquete no se importa:**\
+  Instálalo manualmente con `pip install nombre_paquete` dentro del entorno activado.
+- **Si whisper falla:**\
+  Instálalo con:
+  ```bash
+  pip install git+https://github.com/openai/whisper.git
+  ```
+  Y asegúrate de tener `ffmpeg` instalado:
+  ```bash
+  sudo apt install ffmpeg
+  ```
+
+---
+
+---
+
+## 6. Troubleshooting: comprobando si el entorno virtual está activo
+
+Puedes comprobar si el entorno virtual está activo de las siguientes formas:
+
+- **Mira el prompt de la terminal:**
+
+  - Si ves algo como `(findmaistyle-py3.12)` al inicio, el entorno está activo.
+
+- **Usa este comando:**
+
+  ```bash
+  python3 -c "import sys; print(sys.prefix)"
+  ```
+
+  Si la ruta termina en `.venv`, `.virtualenv`, o incluye tu proyecto, el entorno está activo. Si el resultado es `/usr`, el entorno NO está activo.
+
+- **Si tienes dudas, activa el entorno siempre con:**
+
+  ```bash
+  source $(poetry env info --path)/bin/activate
+  ```
+
+---
+
+**¡Si todos los tests pasan, tu entorno FindMyStyle está listo para despegar! 🚀**
