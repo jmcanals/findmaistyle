@@ -1,4 +1,4 @@
-# 🛠️ Setup remoto de entorno FindMyStyle en WSL + Docker + dispositivo (por Juanma Canals)
+# 🛠️ Setup remoto de entorno FindMyStyle en WSL + Docker + dispositivo
 
 Este documento explica paso a paso cómo he montado un entorno de desarrollo remoto para el proyecto **FindMyStyle**, utilizando mi **PC personal con Windows 10 + WSL2 + Docker**, accediendo y trabajando cómodamente **desde mi dispositivo**, como si el PC fuera un servidor local de IA.
 
