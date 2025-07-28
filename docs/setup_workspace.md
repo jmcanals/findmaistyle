@@ -241,10 +241,6 @@ Verifica que no aparecen errores y que todos los paquetes funcionan correctament
 
 ---
 
-## 5. Checklist del setup estratégico (Semana 1-2)
-
--
-
 ---
 
 ## 6. Troubleshooting: comprobando si el entorno virtual está activo
