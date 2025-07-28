@@ -20,17 +20,6 @@ Este proyecto representa una transición profesional real: de Service Manager en
 - 🦾 **Orquesta todo el proceso con agentes inteligentes y automatización modular**  
 - 📊 **Visualiza los insights** en dashboards interactivos  
 
-[🎬 Reels virales] 
-    ↓
-[🧠 Transcripción y análisis con IA]
-    ↓
-[📊 Dataset de patrones narrativos]
-    ↓
-[🧬 Comparación con tus textos]
-    ↓
-[✍️ Generación de guiones adaptados]
-    ↓
-[📈 Visualización + Automatización]
 
 ---
 
