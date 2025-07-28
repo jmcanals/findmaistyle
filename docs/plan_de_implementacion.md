@@ -30,7 +30,7 @@ Cada fase está diseñada para aportarte una **mejora tangible de skills** y vis
 - [x] Montar entorno virtual y dependencias mínimas
 - [ ] Subir primeros notebooks con pruebas exploratorias
 - [x] Crear archivo requirements.txt o pyproject.toml
-- [ ] Instrucciones de instalación en el README
+- [x] Instrucciones de instalación en el README
 - [ ] Añadir notebook de ejemplo con análisis exploratorio mínimo (EDA)
 
 ### 🔍 Semana 3-4: Captura de datos y transcripción
