@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "findmaistyle"
+version = "0.1.0"
+description = "Análisis y generación de estilo narrativo con IA"
+authors = ["Juanma Canals <jmcanals98@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "findmaistyle" }]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.14"  # 👈 Aquí va la versión de Python
+notebook = "^7.4.4"
+pandas = "^2.3.1"
+textstat = "^0.7.8"
+openai = "^1.97.1"
+spacy = "^3.8.7"
+transformers = "^4.54.0"
+streamlit = "^1.47.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
+
