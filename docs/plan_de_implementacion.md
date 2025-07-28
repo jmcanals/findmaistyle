@@ -27,9 +27,9 @@ Cada fase está diseñada para aportarte una **mejora tangible de skills** y vis
 - [x] Definir visión y objetivos del proyecto
 - [x] Crear `README.md` profesional y claro
 - [x] Establecer estructura de carpetas
-- [ ] Montar entorno virtual y dependencias mínimas
+- [x] Montar entorno virtual y dependencias mínimas
 - [ ] Subir primeros notebooks con pruebas exploratorias
-- [ ] Crear archivo requirements.txt o pyproject.toml
+- [x] Crear archivo requirements.txt o pyproject.toml
 - [ ] Instrucciones de instalación en el README
 - [ ] Añadir notebook de ejemplo con análisis exploratorio mínimo (EDA)
 
