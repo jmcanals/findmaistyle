@@ -1,79 +1,103 @@
-# 🎬 ReelGenius
+# 🎯 FindMyStyle — IA para encontrar y replicar tu voz creativa
 
-**ReelGenius** es un sistema inteligente de análisis y generación de guiones virales, diseñado para ayudarte a entender por qué ciertos Reels funcionan y cómo puedes replicar su éxito con tu propio estilo. Utiliza tecnologías de inteligencia artificial, embeddings semánticos y agentes inteligentes para automatizar el análisis, la adaptación y la generación de guiones personalizados.
+**FindMyStyle** es una plataforma modular de automatización con inteligencia artificial que analiza el contenido de creadores referentes, extrae su estilo narrativo y lo adapta a tu propia voz.
+
+¿Para qué?  
+Para entender por qué ciertos contenidos funcionan, **aprender de forma automatizada** y generar guiones que conectan de forma más efectiva con tu audiencia… sin perder tu autenticidad.
+
+Este proyecto representa una transición profesional real: de Service Manager en automatización bancaria a experto en IA aplicada a automatización de contenidos.
 
 ---
 
-## 🧠 ¿Qué hace ReelGenius?
+## 🧠 ¿Qué hace FindMyStyle?
 
-- 🔍 **Scrapea Reels virales** de cuentas seleccionadas.
-- 📝 **Transcribe y analiza los guiones** usando modelos de lenguaje.
-- 🧩 **Extrae patrones narrativos, emocionales y estructurales.**
-- 🧠 **Cruza esos patrones con tus propios textos** y estilo.
-- ✍️ **Genera nuevos guiones adaptados a ti** que replican fórmulas virales.
-- 📊 **Visualiza todo el análisis** en un dashboard interactivo.
-- ⚙️ **Todo orquestado automáticamente**, modular y open-source.
+- 🔍 **Scrapea Reels virales** de cuentas seleccionadas automáticamente  
+- 🔊 **Transcribe los audios** con Whisper para extraer los guiones  
+- 🧠 **Analiza la estructura narrativa, emocional y retórica** con modelos LLM  
+- 🧩 **Extrae patrones de estilo** (hooks, metáforas, ritmo, tono...)  
+- 🧬 **Cruza estos patrones con tus propios textos**  
+- ✍️ **Genera guiones nuevos adaptados a ti**  
+- 🦾 **Orquesta todo el proceso con agentes inteligentes y automatización modular**  
+- 📊 **Visualiza los insights** en dashboards interactivos  
 
 ---
 
 ## 🧩 Arquitectura del proyecto
 ```plaintext
-📦 ReelGenius/
+findmaistyle/
 ├── src/
-│ ├── scraper/ # Descarga y parsing de Reels
-│ ├── transcriber/ # Transcripción automática con Whisper
+│ ├── scraper/ # Scraping de Reels y metadatos
+│ ├── transcriber/ # Transcripción con Whisper
+│ ├── analyzer/ # Análisis narrativo y estilístico
 │ ├── embeddings/ # Vectorización semántica
-│ ├── analyzer/ # Análisis emocional y narrativo
-│ ├── retriever/ # Recuperación semántica de textos personales
+│ ├── retriever/ # Recuperación y comparación de textos propios
 │ ├── generator/ # Generación de nuevos guiones
-│ ├── orchestrator/ # Automatización y flujo de tareas
-│ ├── api/ # API con FastAPI
-│ └── dashboard/ # Visualización en Streamlit
+│ ├── orchestrator/ # Automatización de tareas y flujos (agentes, n8n)
+│ ├── api/ # API modular con FastAPI
+│ └── dashboard/ # Visualización con Streamlit
 ├── data/
-│ ├── raw/ # Datos sin procesar
-│ └── processed/ # Guiones limpios, vectores, etiquetas
+│ ├── raw/ # Reels sin procesar
+│ └── processed/ # Guiones limpios y vectorizados
 ├── notebooks/ # Experimentos y pruebas interactivas
-├── docs/
+├── docs/ # Documentación técnica y plan de trabajo
 │ └── plan_de_implementacion.md
 ├── README.md
 └── requirements.txt
 
 ```
 ---
-## 🚀 Tecnologías clave
+## ⚙️ Tecnologías clave
 
-- 🧠 `LangChain`, `LLamaIndex`, `CrewAI` para agentes y flujos dinámicos
-- 🔊 `Whisper` de OpenAI para transcripción automática
-- 🧮 `FAISS` o `Chroma` para vector search
-- 💬 `Transformers` de HuggingFace para análisis lingüístico profundo
-- ⚙️ `FastAPI` para APIs
-- 📊 `Streamlit` para dashboard interactivo
-- 🐳 `Docker`, `Makefile`, `GitHub Actions` para integración y despliegue
+### 🔧 Automatización e infraestructura
+
+- 🟩 `n8n` para automatización visual e integración entre servicios  
+- ⚙️ `LangChain`, `LLamaIndex`, `CrewAI` para agentes inteligentes y flujos dinámicos  
+- 🐳 `Docker`, `Makefile`, `GitHub Actions` para CI/CD y portabilidad  
+
+### 🧠 Procesamiento de lenguaje y análisis
+
+- 🔊 `Whisper` de OpenAI para transcripción  
+- 📚 `Transformers` (HuggingFace) para análisis semántico  
+- 📈 `textstat`, `spaCy`, `lexical-diversity` para métricas estilísticas  
+- 🔍 `FAISS` o `Chroma` para búsquedas vectoriales  
+
+### 🛠️ Backend y visualización
+
+- ⚡ `FastAPI` como backend API  
+- 📊 `Streamlit` para dashboards  
+- 🐍 `Pandas` y `Plotly` para análisis y gráficas  
 
 ---
 
-## 🗓 Plan de trabajo
+## 🔄 Plan de trabajo (en desarrollo)
 
-Este proyecto sigue un plan de implementación detallado dividido por semanas.  
-Consulta el archivo completo aquí:  
+Consulta el plan detallado por semanas aquí:  
 📄 [`docs/plan_de_implementacion.md`](docs/plan_de_implementacion.md)
 
+Avance actual:
+
+- [x] Estructura inicial del proyecto  
+- [x] Integración básica de notebooks y flujo modular  
+- [ ] Scraping + Transcripción automatizados  
+- [ ] Análisis profundo de estilo y emociones  
+- [ ] Generación de guiones adaptados  
+- [ ] Dashboards para visualización de insights  
+- [ ] Automatización orquestada con agentes y/o n8n  
+
 ---
 
-## ✅ Estado actual
+## 🚀 Visión a medio plazo
 
-- [x] Estructura del proyecto creada
-- [x] Carpeta modular con notebooks y datos
-- [ ] Scrapear reels + transcribir automáticamente
-- [ ] Análisis de estructura, emoción y estilo
-- [ ] Generación de guiones nuevos personalizados
-- [ ] Dashboard para visualizar métricas y resultados
+- Convertir este proyecto en una **plantilla open-source reutilizable** para analizar y generar contenido adaptado al estilo de cualquier marca o creador  
+- Explorar su uso en YouTube Shorts, TikTok, newsletters o incluso libros  
+- Construir un **caso de uso sólido para transición profesional** hacia perfiles de IA aplicada a automatización y contenido  
+
 ---
 
 ## ✨ Contribuciones
 
 Este proyecto es open-source.  
-Si quieres contribuir o adaptarlo a otros formatos (YouTube Shorts, TikTok, newsletters...), ¡bienvenido/a!
+Si quieres adaptarlo a tu propio caso o contribuir con módulos nuevos (como clasificación de tono, análisis de marca personal, etc.), ¡adelante!
 
 ---
 ## 👨‍💻 Autor
